@@ -7,6 +7,7 @@ import { AppRoutes } from './routes/app.routes';
 //Modules
 import { PagesModule } from './components/pages/pages.module';
 
+
 //Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/users/login/login.component';
@@ -15,11 +16,12 @@ import { RegisterComponent } from './components/users/register/register.componen
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,  
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
