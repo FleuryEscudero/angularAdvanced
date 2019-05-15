@@ -7,6 +7,8 @@ import { AppRoutes } from './routes/app.routes';
 //Modules
 import { PagesModule } from './components/pages/pages.module';
 
+//Services
+import { SettingsService } from './services/settings.service';
 
 //Components
 import { AppComponent } from './app.component';
@@ -29,7 +31,7 @@ import { RegisterComponent } from './components/users/register/register.componen
     AppRoutes,
     
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
