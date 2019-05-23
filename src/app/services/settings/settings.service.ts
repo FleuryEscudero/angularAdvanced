@@ -18,18 +18,18 @@ export class SettingsService {
   }
 
   saveSettings() {
-    console.log('save in localstorage');
+   
     localStorage.setItem('settings', JSON.stringify(this.settings))
   }
 
   getSettings() {
     if (localStorage.getItem('settings')) {
       this.settings = JSON.parse(localStorage.getItem('settings'));
-      console.log('Loading from localstorage');
+     
       this.applySettings(this.settings.theme)
       
     } else {
-      console.log('Default theme');
+     
       this.applySettings(this.settings.theme)
     }
 

@@ -6,16 +6,12 @@ import { AppRoutes } from './routes/app.routes';
 
 //Modules
 import { PagesModule } from './components/pages/pages.module';
-
-//Services
-import { SettingsService } from './services/settings.service';
+import { ServiceModule } from './services/service.module';
 
 //Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/users/login/login.component';
 import { RegisterComponent } from './components/users/register/register.component';
-
-
 
 
 
@@ -29,9 +25,10 @@ import { RegisterComponent } from './components/users/register/register.componen
     BrowserModule,
     PagesModule,
     AppRoutes,
+    ServiceModule
     
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
